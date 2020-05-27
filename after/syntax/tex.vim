@@ -162,6 +162,8 @@ syn match texMathSymbol '\\left|' contained conceal cchar=|
 syn match texMathSymbol '\\mid|' contained conceal cchar=|
 syn match texMathSymbol '\\right|' contained conceal cchar=|
 
+syn match texMathSymbol '\\sphericalangle' contained conceal cchar=∢
+
 " hide \text delimiter etc inside math mode
 if !exists("g:tex_nospell") || !g:tex_nospell
   syn region texMathText matchgroup=texStatement start='\\\%(\%(inter\)\=mathrm\)\s*{'     end='}' concealends keepend contains=@texFoldGroup containedin=texMathMatcher
