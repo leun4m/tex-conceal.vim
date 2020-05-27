@@ -16,10 +16,6 @@ syn match texMathSymbol '\\langle\>\s*' contained conceal cchar=⟨
 syn match texMathSymbol '\s*\\rangle\>' contained conceal cchar=⟩
 syn match texMathSymbol '\\\\' contained conceal cchar=⏎
 
-syn match texMathSymbol '\\left|' contained conceal cchar=|
-syn match texMathSymbol '\\mid|' contained conceal cchar=|
-syn match texMathSymbol '\\right|' contained conceal cchar=|
-
 " logical symbols
 syn match texMathSymbol '\\lor\>' contained conceal cchar=∨
 syn match texMathSymbol '\\land\>' contained conceal cchar=∧
@@ -161,6 +157,10 @@ syn match texMathSymbol '\\quad' contained conceal cchar=
 syn match texMathSymbol '\\qquad' contained conceal cchar=    
 syn match texMathSymbol '\\sqrt' contained conceal cchar=√
 syn match texMathSymbol '\\\!' contained conceal
+
+syn match texMathSymbol '\\left|' contained conceal cchar=|
+syn match texMathSymbol '\\mid|' contained conceal cchar=|
+syn match texMathSymbol '\\right|' contained conceal cchar=|
 
 " hide \text delimiter etc inside math mode
 if !exists("g:tex_nospell") || !g:tex_nospell
