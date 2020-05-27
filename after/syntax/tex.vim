@@ -16,6 +16,10 @@ syn match texMathSymbol '\\langle\>\s*' contained conceal cchar=⟨
 syn match texMathSymbol '\s*\\rangle\>' contained conceal cchar=⟩
 syn match texMathSymbol '\\\\' contained conceal cchar=⏎
 
+syn match texMathSymbol '\\left|' contained conceal cchar=|
+syn match texMathSymbol '\\mid|' contained conceal cchar=|
+syn match texMathSymbol '\\right|' contained conceal cchar=|
+
 " logical symbols
 syn match texMathSymbol '\\lor\>' contained conceal cchar=∨
 syn match texMathSymbol '\\land\>' contained conceal cchar=∧
